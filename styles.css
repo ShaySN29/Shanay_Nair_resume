@@ -1,0 +1,58 @@
+/* This changes the properties of the div in which the content is positioned */
+#contentExcludingNavBar {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(221, 224, 224);
+    
+}
+
+/* I had a problem with my sticky nav bar positioned above my anchor heading. The below link solved my problem
+https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
+html {
+    scroll-padding-top: 4rem;
+}
+
+#backgroundColour {
+    background-color: rgb(42, 171, 190);
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: rgb(42, 171, 190);
+}
+
+#greeting {
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+
+.bio p {
+    text-align: justify;
+    line-height: 35px;
+}
+
+.imgShanay {
+    height: 600px;
+    width: auto;
+    align-items: flex-end;
+}
+
+#contactLogos img, #contactLogos a {
+    padding-right: 5%;
+}
+
+#technologyLogos img {
+    padding-right: 5%;
+}
+
+.educationList {
+    line-height: 30px;
+}
+
+p {
+    text-align: justify;
+}
