@@ -41,8 +41,8 @@ h2 {
     align-items: flex-end;
 }
 
-#contactLogos img, #contactLogos a {
-    padding-right: 5%;
+#contactLogos {
+  text-align: center;
 }
 
 #technologyLogos img {
