@@ -1,12 +1,69 @@
-/* This changes the properties of the div in which the content is positioned */
-#contentExcludingNavBar {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: rgb(221, 224, 224);
-    
+.navbarheading {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    float: left;
+    text-align: center;
+    padding: 14px 25px;
 }
+
+.navbar {
+    height: 1.5cm;
+    overflow: hidden;
+}
+
+/* This changes the properties of the div in which the content is positioned */
+.about{
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    background-color: rgb(227, 234, 234);
+}
+
+#greeting {
+    font-size: 1.5cm;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.imgShanay {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-bottom: 1cm;
+}
+
+#name {
+    color: rgb(42, 171, 190);
+}
+
+.table {
+    border: 1px solid;
+    padding-left: 15px;
+    margin-right: 50cm;
+}
+
+#about, #projectsInner, #technicalSkills, #contact   {
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+#projectsOuter {
+    background-color: rgb(230, 231, 231);
+    margin-left: 0%;
+}
+
+#projectsInner {
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+
+}
+
+
 
 /* I had a problem with my sticky nav bar positioned above my anchor heading. The below link solved my problem
 https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
@@ -14,9 +71,6 @@ html {
     scroll-padding-top: 4rem;
 }
 
-#backgroundColour {
-    background-color: rgb(42, 171, 190);
-}
 
 h2 {
     text-align: center;
@@ -24,34 +78,11 @@ h2 {
     color: rgb(42, 171, 190);
 }
 
-#greeting {
-    font-weight: bold;
-    font-style: italic;
-    font-size: large;
-}
-
 .bio p {
     text-align: justify;
     line-height: 35px;
 }
 
-.imgShanay {
-    height: 600px;
-    width: auto;
-    align-items: flex-end;
-}
-
-#contactLogos {
-  text-align: center;
-}
-
-#technologyLogos img {
-    padding-right: 5%;
-}
-
-.educationList {
-    line-height: 30px;
-}
 
 p {
     text-align: justify;

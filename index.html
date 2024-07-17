@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shanay Nair</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
-         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css" type="text/css">
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-65RZJT9K74"></script>
             <script>
@@ -18,186 +17,130 @@
             </script>
     </head>
 
-    <body id="backgroundColour">
+    <body>
         <!-- sticky navbar to navigate to specific section -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#aboutMe">About Me</a>
-              <a class="navbar-brand" href="#contactDetails">Contact Details</a>
-              <a class="navbar-brand" href="#skillsAndCompetencies">Skills and Competencies</a>
-              <a class="navbar-brand" href="#education">Education</a>
-              <a class="navbar-brand" href="#workExperience">Work Experience</a>
-              <a class="navbar-brand" href="#projects">Projects</a>
-              <a class="navbar-brand" href="#articlesPublished">Articles Published</a>
+            <div class="container">
+              <a class="navbarheading" href="#about">ABOUT</a>
+              <a class="navbarheading" href="#technicalSkills">TECHNICAL SKILLS</a>
+              <a class="navbarheading" href="#projects">PROJECTS</a>
+              <a class="navbarheading" href="#contactDetails">CONTACT</a>
             </div>
         </nav>
         
-        <!-- contentExcludingNavBar Div to have a different background colour for the content -->
-        <div id="contentExcludingNavBar">
-            <div class="container">
-                <h2 class="mb-3" id="aboutMe">About Me</h2>
-                    <div class="row">
-                        <div class="bio col-7">
-                            <p class="mb-2"> <span id="greeting">Hello, I am Shanay!</span> I grew up in Port Elizabeth and moved to Cape Town in 2016 when I started my 
-                                first job. I currently work as a Forensic Analyst for the South African Police Service as a Warrant Officer. I studied BSc Biochemistry 
-                                and Chemistry and BSc Honours Chemistry at the Nelson Mandela University. I love science because of the problem solving and the ability 
-                                to create useful compounds by combining different resources. I decided it was time for a career change because there was no growth for 
-                                me in my current career.
-                            </p>
-                    
-                            <p class="mb-3 p-2"> In 2022 I started a Full Stack Web Developer Bootcamp with HyperionDev which I completed in January 2023 with an aggregate 
-                                of 99%. I love being creative and so I decided Web Development would be a good path for me. At the end of the Bootcamp I am able to build 
-                                and deploy applications using the MERN stack. I am motivated by my need to improve myself.
-                            </p>
+        <div id="bodyExclNav">
+        <div id="about">
+            <p class="mb-2" id="greeting">Hello, I'm <span id="name">Shanay</span>!</p>
+            <img src="images/img_profile.png" alt="Shanay Nair" class="imgShanay" width="100%">
+            <p class="aboutText"> I am a Warrant Officer in the South Africa Police Service as a Forensic Analyst. I have a BSC Honours in Chemistry 
+                and completed a Full Stack Web Developer Bootcamp in 2023. At the end of my 6 month bootcamp I am able to plan, create, test and 
+                deploy a full MERN stack app. I am embarking on a career change for personal and career growth.
+            </p>
+        </div>
 
-                            <p class="mb-3 p-2"> I am hardworking and enthusiastic, I am always willing to learn new skills. I am a spontaneous planner and have a good sense of 
-                                humour. I am passionate about food, animals and learning about new topics. My dream is to travel more and to accomplish this career 
-                                change that I have started.
-                            </p>
-                        </div>
-
-                        <div class="col-5">
-                            <img src="images/img_shanay.jpg" alt="Shanay Nair" class="imgShanay rounded img-fluid img-thumbnail float-end">
-                        </div>
-                    </div>
+        <div id="technicalSkills">
+            <h2 class="mt-5 mb-3" id="skillsAndCompetencies">Technical Skills</h2>
+            <table class="table m">
+                <thead>
+                    <tr>
+                      <th scope="col">Programming Languages</th>
+                      <th scope="col">Libraries and Frameworks</th>
+                      <th scope="col">Tools and Platforms</th>
+                      <th scope="col">Other Skills</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                  <tr>
+                    <td>Javascript, HTML, CSS</td>
+                    <td>React, Next.js, Express.js, Node.js, jQuery, Bootstrap, Jest, Mocha and Chai</td>
+                    <td>Git, GitHub, Vercel, Heroku, MongoDB, Restful API, Postman, JWT Authentication, Google Analytics, AppVeyor</td>
+                    <td>Adobe Photoshop, Canva, Report Writing</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="projectsOuter" class="bg-light">
+            <div id="projectsInner">
+            <h2 class="mt-5" id="projects">Projects</h2>
+            <div class="mb-5">
+                <h4>Online Store</h4>
+                <p>An online store website which contains a catalogue page and a functional cart. When the "Add to Cart" button is clicked in the 
+                    catalogue page, an alert with the updated total is shown. The item is added to the cart and the totals are updated. The user is also 
+                    able to choose between collection and delivery options, which updates the totals accordingly. The user can also apply a coupon for a discount. 
+                </p>
+                
+                <a href="https://github.com/ShaySN29/Online-Store" target="_blank">Chai There! Online Store</a>
             </div>
+        
+        
+            <div class="mb-5">
+                <h4>Memory Game</h4>
+                        <p>A memory game where the player flips two cards at a time to find the matching pair. If the cards do not match the cards will flip over
+                            again however if the pair of cards match the cards will stay flipped over and the user needs to find another matching pair. The game ends
+                            when all the matching pairs are found. The number of flips are counted as the player flips cards. When the game is over the player can
+                            decide to begin another game. 
+                        </p>
+                        
+                        <a href='https://github.com/ShaySN29/Memory-Game' target="_blank">GitHub - A Memory Game of Thrones</a>              
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h4>iTunes Media Search App</h4>
+                        <p>An app to search for various media on the itunes store. The user can enter a search and choose the type of media they are looking for.
+                            The results are displayed and the user can save an item to their favourites or click on a link to the iTunes store. The user can also
+                            view and delete items from their favourites list.
+                        </p>
+                        
+                        <a href='https://github.com/ShaySN29/iTunes_app' target="_blank">GitHub - iTunes Search App</a>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h4>Car Database App</h4>
+                        <p>An app to add cars to a database. A user can add a car bearing details pertaining to the details of the car and the owner of the car. 
+                            The details of the car can be updated or deleted from the database. The user can also view cars that are older than 5 years.
+                        </p>
+                        
+                        <a href='https://github.com/ShaySN29/Car-Database' target="_blank">GitHub - Car Database</a>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h4>ToDo List App</h4>
+                        <p>
+                            A ToDo List App where the user is required to log in. If there are no items in the user's todo list then the user can add tasks to the
+                            list. If the user has items in the list the list is retrieved from the database and the user can either add more tasks or mark
+                            tasks as complete in the list. Tasks on the list can be cleared and the list can be saved to the database.
+                        </p>
+                        <a href='https://github.com/ShaySN29/Todo-List' target="_blank">GitHub - Todo List</a>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <h4>Missing Person Database App</h4>
+                        <p>
+                            An app built using the MERN (MongoDB - Express.js - React - Node.js) stack where a user logs in as an admin or user. An admin user can create,
+                            update or delete from the missing person list or update the admin rights of a user. The user can view the missing person list.
+                        </p>
+                        <a href='https://github.com/ShaySN29/Missing-Person-Database' target="'_blank">Github - Missing Person Database</a>
+                    </div>
+        </div>        
+    </div>
 
-            <h2 class="mt-5 mb-3" id="contactDetails">Contact Details</h2>
+        <div id="contact">
+            <h2 class="mt-5 mb-3" id="contactDetails">Contact Me</h2>
                 <div id="contactLogos">
                     <a class="me-5" href="http://www.linkedin.com/in/shanay-sathdeo-nair-09320b93" target="_blank">
                         <img src="images/linkedin_logo.png" alt="Linkedin" height="100">
                     </a>
-
+    
                     <a href="mailto:shanaysathdeo@gmail.com">
                         <img src="images/email_logo.png" alt="Email" height="90">
                     </a> 
                 </div>
+        </div>
+    </div>
+        </body>
+        </html>
         
-        
-            <h2 class="mt-5" id="skillsAndCompetencies">Skills and Competencies</h2>
-                <p class="mt-3 mb-4 p-2">I have used the following technologies in my bootcamp:</p>
-                    <div id="technologyLogos" class="mb-3">
-                        <img src="images/html_logo.png" alt="HTML" height="100">
-                        <img src="images/css_logo.png" alt="CSS" height="100">
-                        <img src="images/javascript_logo.png" alt="JavaScript" height="100">
-                        <img src="images/bootstrap_logo.png" alt="Bootstrap" height="100">
-                        <img src="images/jquery_icon.png" alt="jQuery" height="100">
-                        <img src="images/git_logo.png" alt="git" height="90">
-                    </div>
-                    <div id="technologyLogos" class="mb-3 mt-2">
-                        <img src="images/node_logo.png" alt="node" height="100">
-                        <img src="images/express_logo.png" alt="express" height="150">
-                        <img src="images/mongo_logo.png" alt="mongodb" height="120">
-                        <img src="images/next_logo.png" alt="next" height="100">
-                    </div>
-
-                <div class="mt-5"> 
-                    <p class="mb-2 p-2">I have acquired the following scarce skills as part of my Forensic Analyst training:</p>
-                        <ol>
-                            <li>Document Analysis (Printing Methods and Security features)</li>
-                            <li>Handwriting and Signature Analysis</li>
-                            <li>Adobe Photoshop</li>
-                        </ol>
-                </div>
-                   
-                 
-            <h2 class="mt-5 mb-3 p-2" id="education">Education</h2>
-                <ul class="educationList">
-                    <li><b>Full Stack Web Developer Bootcamp</b> - HyperionDev : 2022</li>
-                    <li><b>BSc Hons Chemistry</b> - Nelson Mandela University : 2015 - 2016</li>
-                    <li><b>BSc Biochemistry and Chemistry</b> - Nelson Mandela University : 2012 - 2014</li>
-                    <li><b>NSC Certificate</b> - Westering High School : 2007 - 2011</li>
-                </ul>
-              
-            <h2 class="mt-5" id="workExperience">Work Experience</h2>
-                
-                <h4>Forensic Analyst</h4>
-                    <h5>South African Police Service - Forensic Science Laboratory: 2016 - Present</h5>
-                        <p>I work in the Questioned Document Section as a Forensic Analyst. This entails the analysis of local and foreign currency and security 
-                            documents to determine their authenticity as well as the analysis of handwriting and signatures. 
-                        </p>
-
-                
-            <h2 class="mt-5" id="projects">Projects</h2>
-                <div class="mb-5">
-                    <h4>Online Store</h4>
-                    <p>An online store website which contains a catalogue page and a functional cart. When the "Add to Cart" button is clicked in the 
-                        catalogue page, an alert with the updated total is shown. The item is added to the cart and the totals are updated. The user is also 
-                        able to choose between collection and delivery options, which updates the totals accordingly. The user can also apply a coupon for a discount. 
-                    </p>
-
-                    <a href="https://github.com/ShaySN29/Online-Store" target="_blank">Chai There! Online Store</a>
-                </div>
-
-                <div class="mb-5">
-                    <h4>Memory Game</h4>
-                    <p>A memory game where the player flips two cards at a time to find the matching pair. If the cards do not match the cards will flip over
-                        again however if the pair of cards match the cards will stay flipped over and the user needs to find another matching pair. The game ends
-                        when all the matching pairs are found. The number of flips are counted as the player flips cards. When the game is over the player can
-                        decide to begin another game. 
-                    </p>
-                    
-                    <a href='https://github.com/ShaySN29/Memory-Game' target="_blank">GitHub - A Memory Game of Thrones</a>              
-                </div>
-
-                <div class="mb-5">
-                    <h4>iTunes Media Search App</h4>
-                    <p>An app to search for various media on the itunes store. The user can enter a search and choose the type of media they are looking for.
-                        The results are displayed and the user can save an item to their favourites or click on a link to the iTunes store. The user can also
-                        view and delete items from their favourites list.
-                    </p>
-
-                    <a href='https://github.com/ShaySN29/iTunes_app' target="_blank">GitHub - iTunes Search App</a>
-                </div>
-
-                <div class="mb-5">
-                    <h4>Car Database App</h4>
-                    <p>An app to add cars to a database. A user can add a car bearing details pertaining to the details of the car and the owner of the car. 
-                        The details of the car can be updated or deleted from the database. The user can also view cars that are older than 5 years.
-                    </p>
-
-                    <a href='https://github.com/ShaySN29/Car-Database' target="_blank">GitHub - Car Database</a>
-                </div>
-
-                <div class="mb-5">
-                    <h4>ToDo List App</h4>
-                    <p>
-                      A ToDo List App where the user is required to log in. If there are no items in the user's todo list then the user can add tasks to the
-                      list. If the user has items in the list the list is retrieved from the database and the user can either add more tasks or mark
-                      tasks as complete in the list. Tasks on the list can be cleared and the list can be saved to the database.
-                    </p>
-                    <a href='https://github.com/ShaySN29/Todo-List' target="_blank">GitHub - Todo List</a>
-                </div>
-
-                <div class="mb-5">
-                    <h4>Missing Person Database App</h4>
-                    <p>
-                        An app built using the MERN (MongoDB - Express.js - React - Node.js) stack where a user logs in as an admin or user. An admin user can create,
-                        update or delete from the missing person list or update the admin rights of a user. The user can view the missing person list.
-                    </p>
-                    <a href='https://github.com/ShaySN29/Missing-Person-Database' target="'_blank">Github - Missing Person Database</a>
-                </div>
-
-                    <h2 class="mt-5 mb-4" id="articlesPublished">Articles Published</h2>
-
-                    <div class="container"> 
-                    <div class="row">
-                        <div class="col-10">  
-                            <p>My research on the "Reactivity of a benzothiazole-thiourea derivative with the oxorhenium(V) core: Isolation of rhenium(III) and (V) 
-                                complexes" was pulished in Polyhedron, a Scientific Journal in 2016.
-                            </p>
-                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0277538716300705" target="_blank">ScienceDirect</a>
-                        </div>
-
-                        <div class="col-2">
-                            <img src="images/molecule_logo.png" alt="Polyhedron Journal" height="100" class="float-end mb-4">
-                        </div>
-                    </div>
-                </div>
-         </div> <!--closes the #contentExcludingNavBar Div  -->
-    </body>
-</html>
-
 
 <!--***************** ACKNOWLEDGEMENTS ********************
     All icons and logos were downloaded from: https://icon-icons.com
